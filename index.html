@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zodiac & Spiritual Products</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #1b003c, #4b006e);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 10px;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 30px;
+      text-align: center;
+      text-shadow: 0 0 10px #fff;
+    }
+
+    .catalog {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      max-width: 1000px;
+      width: 100%;
+    }
+
+    .product {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 25px;
+      width: 280px;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.4s, box-shadow 0.4s;
+    }
+
+    .product:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 15px 25px rgba(255, 255, 255, 0.3);
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 20px;
+      margin-bottom: 15px;
+      transition: transform 0.4s;
+    }
+
+    .product:hover img {
+      transform: scale(1.05);
+    }
+
+    .product h2 {
+      font-size: 22px;
+      margin: 10px 0;
+      color: #f7e9ff;
+    }
+
+    .product p {
+      font-size: 14px;
+      color: #dcd6f7;
+      margin-bottom: 15px;
+    }
+
+    .product a {
+      text-decoration: none;
+      background: linear-gradient(45deg, #ff6af3, #8c1aff);
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 12px;
+      display: inline-block;
+      font-weight: 600;
+      transition: 0.3s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .product a:hover {
+      background: linear-gradient(45deg, #ff95f5, #b34bff);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    }
+
+    /* Floating mystical icons */
+    .icon {
+      position: absolute;
+      width: 40px;
+      opacity: 0.6;
+      animation: float 4s ease-in-out infinite alternate;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0) rotate(0deg); }
+      100% { transform: translateY(-20px) rotate(20deg); }
+    }
+
+    @media (max-width: 600px) {
+      .catalog {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>✨ Zodiac & Spiritual Products ✨</h1>
+
+  <div class="catalog">
+    <div class="product">
+      <img src="https://via.placeholder.com/280x180" alt="Zodiac Bracelet">
+      <h2>💫 Zodiac Energy Bracelet</h2>
+      <p>Align your energy with your zodiac sign. Enhance intuition & cosmic balance.</p>
+      <a href="https://linktoyourproduct1.com" target="_blank">View Product</a>
+      <img src="https://cdn-icons-png.flaticon.com/512/2910/2910765.png" class="icon" style="top:10px; left:10px; width:30px;">
+    </div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/280x180" alt="Crystal Set">
+      <h2>🔮 Spiritual Crystal Set</h2>
+      <p>Purify your space and mind. Crystals chosen to match your astrological needs.</p>
+      <a href="https://linktoyourproduct2.com" target="_blank">View Product</a>
+      <img src="https://cdn-icons-png.flaticon.com/512/2910/2910765.png" class="icon" style="top:10px; right:10px; width:30px;">
+    </div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/280x180" alt="Tarot Guide">
+      <h2>🌙 Tarot & Zodiac Guide</h2>
+      <p>Discover daily guidance and insights through your zodiac and tarot readings.</p>
+      <a href="https://linktoyourproduct3.com" target="_blank">View Product</a>
+      <img src="https://cdn-icons-png.flaticon.com/512/2910/2910765.png" class="icon" style="bottom:10px; left:50%; width:35px; transform:translateX(-50%);">
+    </div>
+  </div>
+
+</body>
+</html>
